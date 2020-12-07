@@ -3,8 +3,11 @@ layout: post
 title: Evaluating Metrics for Machine Learning models
 ---
 
+## Overview:
+Evaluation metrics are used to measure the quality of ML models. While there are many different types of evaluation metrics, it is important to understand what each of them means and how they can be used to make comparisons between models. They are a great tool to help make inferences on our model, enabling us to tune them to improve the overall predictive power of our model.  
+
 ## Basics:
-<!-- Ground Truth: -->
+Ground truth: Ground truth refers to the real life results of an event. It is the reality you want your model to predict. Practically, your model will never be able to predict the ground truth as ground truth will also have some noise and no model gives a hundred percent accuracy but you want your model to be as close as possible.
 
 True Positives(TP):
 Model predicts 1 and Ground truth is 1.
@@ -93,7 +96,7 @@ The Receiver Operating Characteristic curve is a plot of Sensitivity vs 1-Specif
 <!-- need to double check this -->
 From above it is safe to say the best threshold on ROC curve (with maximum Sensitivity and least 1-Specificity) would lie on the coordinate (0, 1) in the cartesian plane.
 
-![_config.yml]({{ site.baseurl }}/images/evaluation_metrics/ROC_2.PNG)
+![_config.yml]({{ site.baseurl }}/images/evaluation_metrics/ROC_2.png)
 
 <!-- need to double check this -->
 Note: If keeping false Negatives to a minimal is the desired result then we can plot the graph between Sensitivity and precision. Especially useful in imbalanced data.
